@@ -32,6 +32,17 @@
 			});
 		});
 	</script>
+	<script type="text/javascript">
+	$(function() {
+		var offset = $("#menu1").offset();
+		var topPadding = 0;
+		$(window).scroll(function() {
+			if ($(window).scrollTop() > offset.top) {
+				$("#menu1").stop().animate({marginTop: $(window).scrollTop() - offset.top + topPadding});
+			}
+			else {$("#menu1").stop().animate({marginTop: 0});};});
+	});
+	</script>
 	<!-- <script>
 			$(document).ready(function(){
  var $menu = $('menu');
@@ -95,7 +106,7 @@ $menu.removeClass('fix').addClass('navigate');
 			</div>
 			<nav id="menu" class="navigate">
 	
-				<ul id="menu1">
+				<ul id="menu1" class="navigate1">
 					<li class="navPanel">
 						<a href="#">Головна</a>
 					</li>
