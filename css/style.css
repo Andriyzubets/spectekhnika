@@ -14,6 +14,28 @@
 body {
 	/*background: #99CCFF;*/
 }
+h1 {
+	text-transform: uppercase;
+	text-align: center;
+	vertical-align: baseline;
+	color: #ffc010;
+}
+
+h2 {
+	text-transform: uppercase;
+	text-align: center;
+	vertical-align: baseline;
+	color: #ffc010;
+}
+h3 {
+	text-transform: uppercase;
+	text-align: center;
+	font-size: 22px;
+	vertical-align: baseline;
+	color: #ffc010;
+	/*text-shadow: white 2px 2px 2px;*/
+	margin: 2%;
+}
 #toTop {
 	width:55px;
 	height: 55px;
@@ -121,6 +143,23 @@ opacity: 0.65;
     height: 70px;
     width: 100%;
     position: relative;
+    padding: 1% 0;
+}
+#menu h2 {
+	font-size: 21px;
+}
+.title {
+	font-size: 34px;
+	text-transform: uppercase;
+	text-align: center;
+	color: #F5A421;
+	font-weight: normal;
+}
+#cite ul {
+	-webkit-padding-start: 40px;
+}
+.about-img {
+	width: 980px;
 }
 #menu1 {
 /* display: block; - ниже*/
@@ -184,9 +223,11 @@ opacity: 0.65;
 	text-decoration: none;
 	color: #ffc010;	
 }
-#menu a:hover {
-	color: white;
+#menu h2:hover {
+	
+	text-decoration: none;
 	text-shadow: white 1px 1px 2px;
+	color: #fff;
 }
 #menu a:active, .subpanel button:active {
 	color: green;
@@ -254,25 +295,12 @@ opacity: 0.65;
     background-size: 100% 100%;
     height: 70px;
     padding: 1%;
+    line-height: 70px;
 }
 #catalog, #service, #finance, #about, #contacts {
 	margin: 3% 7%;
 }
-h1 {
-	text-transform: uppercase;
-	text-align: center;
-	vertical-align: baseline;
-	color: #ffc010;
-	margin: 2%;
-}
 
-h2 {
-	text-transform: uppercase;
-	text-align: center;
-	vertical-align: baseline;
-	color: #ffc010;
-	margin: 2%;
-}
 .pres-cat {
 	border-bottom-right-radius: 10px;
     border-right: 1px solid gray;
@@ -314,6 +342,7 @@ table {
 .img_col {
 	width: 30%;
 }
+
 .nomenclature {
 	width: 30%;
 	text-align: right;
@@ -328,6 +357,7 @@ table {
 .img_detailed {
 	max-width: 100%;
 	height: auto;
+	box-shadow: gray 6px 6px 2px;
 }
 .hide {
 	display: none;
@@ -342,7 +372,11 @@ table {
 	text-align: justify;
 	text-indent: 5%;
 }
-
+#catalog a {
+	text-decoration: none;
+	color: #4e4848;
+	text-shadow: gray 2px 2px 4px;
+}
 h2.contact { 
     padding-left: 125px; 
     font-size: 14px; 
@@ -360,7 +394,23 @@ p.contact {
     color: #4b4b4b; 
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2); 
 }
- 
+p.cite {
+    margin: 1% 2%;
+    text-align: justify;
+}
+#cite>ul {
+	padding: 1% 7%;
+}
+#finance>p {
+	padding: 10px 0 10px 0;
+}
+#finance>ul {
+	padding: 1% 7%;
+}
+hr {
+	width: 75%;
+	margin: 0 5%;
+}
 #contacts {
     margin-bottom: 0px; 
     text-align: center;
