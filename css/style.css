@@ -399,9 +399,6 @@ p.cite {
     text-align: justify;
 	text-indent: 4%;
 }
-text:first-letter {
-	text-indent: 4%;
-}
 #cite>ul {
 	padding: 1% 7%;
 }
