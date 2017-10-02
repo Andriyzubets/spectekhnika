@@ -335,9 +335,10 @@ table {
 	padding: 10px;
 }
 .telescope .bottom {
-	box-shadow: gray 2px 2px 2px;
-	height: 10px;
-	border-radius: 3px;
+	box-shadow: grey 0px 0px 1px;
+    height: 1px;
+    border-bottom: 3px solid gray;
+    opacity: 0.6;
 }
 .img_col {
 	width: 30%;
