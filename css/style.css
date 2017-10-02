@@ -397,6 +397,10 @@ p.contact {
 p.cite {
     margin: 1% 2%;
     text-align: justify;
+	text-indent: 4%;
+}
+text:first-letter {
+	text-indent: 4%;
 }
 #cite>ul {
 	padding: 1% 7%;
@@ -408,8 +412,10 @@ p.cite {
 	padding: 1% 7%;
 }
 hr {
-	width: 75%;
 	margin: 0 5%;
+}
+#about>ul {
+	padding: 1% 7%;
 }
 #contacts {
     margin-bottom: 0px; 
