@@ -74,3 +74,33 @@ $(document).on("click", ".slider .nav span", function(e) { // slider click navig
 	});
 
 // фиксация меню
+$(function() {
+		var offset = $("#menu1").offset();
+		$(window).scroll(function() {
+			if ($(window).scrollTop() > offset.top) {
+				$("#menu1").stop().animate({marginTop: $(window).scrollTop() - offset.top},0);
+			}
+			else {$("#menu1").stop().animate({marginTop: 0});};
+		});
+	});
+
+$(window).scroll(function(e) {
+  var height = $(this).scrollTop();
+  $('.navigate1')[height >= 476 ? 'addClass' : 'removeClass']('active')
+});
+// fancybox - всплывающие окна
+$(document).ready(function() {
+			$("a[rel ^= ex]").fancybox({
+				'transitionIn'		: 'none',
+				'transitionOut'		: 'none',
+				'titlePosition' 	: 'over',
+				'titleFormat'		: function(title, currentArray, currentIndex, currentOpts) {
+					return '<span id="fancybox-title-over">Image ' + (currentIndex + 1) + ' / ' + currentArray.length + (title.length ? ' &nbsp; ' + title : '') + '</span>';
+				}
+			});
+			$("a[rel ^= var]").fancybox({
+				'titlePosition'		: 'outside',
+				'transitionIn'		: 'none',
+				'transitionOut'		: 'none'
+			});
+		});

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="uk">
 <head>
 	<!-- Global Site Tag (gtag.js) - Google Analytics -->
 	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-107213778-1"></script>
@@ -10,7 +10,7 @@
 
 	  gtag('config', 'UA-107213778-1');
 	</script>
-
+	<!-- global settings -->
 	<meta charset="UTF-8">
 	<meta http-equiv="imagetoolbar" content="no" />
 	<title>Спецтехніка ТОВ "ВИНАЙТИ"</title>
@@ -18,50 +18,12 @@
 	<script type="text/javascript" src="https://code.jquery.com/jquery-latest.min.js"></script>
 	<script src="js/script.js"></script>
 	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
-	<script>
-		!window.jQuery && document.write('<script src="jquery-1.4.3.min.js"><\/script>');
-	</script>
-	<script type="text/javascript" src="./fancybox/jquery.mousewheel-3.0.4.pack.js"></script>
-	<script type="text/javascript" src="./fancybox/jquery.fancybox-1.3.4.pack.js"></script>
-	<link rel="stylesheet" type="text/css" href="./fancybox/jquery.fancybox-1.3.4.css" media="screen" />
-	<!-- Всплывающие окна фото и описание -->
-	<script type="text/javascript">
-		$(document).ready(function() {
-			$("a[rel ^= ex]").fancybox({
-				'transitionIn'		: 'none',
-				'transitionOut'		: 'none',
-				'titlePosition' 	: 'over',
-				'titleFormat'		: function(title, currentArray, currentIndex, currentOpts) {
-					return '<span id="fancybox-title-over">Image ' + (currentIndex + 1) + ' / ' + currentArray.length + (title.length ? ' &nbsp; ' + title : '') + '</span>';
-				}
-			});
-			$("a[rel ^= var]").fancybox({
-				'titlePosition'		: 'outside',
-				'transitionIn'		: 'none',
-				'transitionOut'		: 'none'
-			});
-		});
-	</script>
-	<script type="text/javascript">
-	$(function() {
-		var offset = $("#menu1").offset();
-		var topPadding = 0;
-		$(window).scroll(function() {
-			if ($(window).scrollTop() > offset.top) {
-				$("#menu1").stop().animate({marginTop: $(window).scrollTop() - offset.top + topPadding});
-			}
-			else {$("#menu1").stop().animate({marginTop: 0});};});
-	});
-	</script>
-	
-	<!-- 1. Сделал текст лого ссылками
-		 2. Сделал формат ссылок хедера
-		 3. Добавил слайды
-		 4. объем wrapper
-		 5. изменение блоков хедера
-		 6. изменение ссылок языков на список
-		 7. изменение фона хедера
-		  -->
+	<!-- <script>
+		!window.jQuery && document.write('<script src="jquery-1.4.3.min.js"></script>');
+	</script> -->
+	<script type="text/javascript" src="fancybox/jquery.mousewheel-3.0.4.pack.js"></script>
+	<script type="text/javascript" src="fancybox/jquery.fancybox-1.3.4.pack.js"></script>
+	<link rel="stylesheet" type="text/css" href="fancybox/jquery.fancybox-1.3.4.css" media="screen"/>
 </head>
 <body>
 	<section class="wrapper">
@@ -88,7 +50,7 @@
 			</div>
 			<div class="rightdiv">
 				<ul class="langPanel">
-					<li>
+					<!-- <li>
 						<a href="#"><img src="img/langUA.png" alt="UK" class="ico_lang"></a>
 					</li>
 					<li>
@@ -97,9 +59,9 @@
 					<li>
 						<a href="#">
 							<img src="img/langRU.png" alt="RU" class="ico_lang"></a>
-					</li>
+					</li> -->
 					<li>
-						<a href="#"><img src="img/pdf.png" alt="Donwload PDF" class="ico_lang">
+						<a download="price.pdf" href="price.pdf"><button class="pdf">Завантажити прайс    <img src="img/pdf.png" alt="Donwload PDF" class="ico_lang"></button>
 						</a>
 					</li>
 				</ul>
@@ -107,6 +69,9 @@
 			<nav id="menu" class="navigate">
 	
 				<ul id="menu1" class="navigate1">
+						<div class="but"></div>
+						<div class="but"></div>
+						<div class="but"></div>
 					<li class="navPanel">
 						<a href="#"><h2>Головна</h2></a>
 					</li>
@@ -1561,7 +1526,7 @@
 			</div>
 		</div>
 	</section>
-	<div id="toTop"> ^ </DIV>
-		
+	<div id="toTop"> <div class="inTop"> ^ </div></DIV>
+	<div class="footer">&#169; Всі права захищені. ТОВ "ВИНАЙТИ". 2017 рік <br>Розроблено VINIT Lab</div>
 </body>
 </html>
