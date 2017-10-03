@@ -41,11 +41,12 @@ h3 {
 	height: 55px;
 	border-radius: 55px;
 	line-height: 55px;
-	background: green;
+	border: 4px dashed #ffa300;
 	text-align:center;
 	position:fixed;
 	bottom:10px; /* отступ кнопки от нижнего края страницы*/
 	right:10px;
+	background: black;
 	cursor:pointer;
 	display:none;
 	color:#fff;
@@ -53,6 +54,7 @@ h3 {
 	font-size:15px;
 	box-shadow: #5e8e5e 2px 2px 2px;
 }
+
 #toTop:hover {
 	font-size: 20px;
 }
@@ -92,16 +94,39 @@ h3 {
 }
 .langPanel {
 	 list-style-type: none;
+	 opacity: 0.85;
 }
 .langPanel li {
 	margin: 1% 1%;
 	display: inline;
 }
 .langPanel a:hover {
-opacity: 0.65;
+opacity: 1;
 }
 .ico_lang {
 	max-width: 30px;
+	float: right;
+}
+button.pdf {
+    border-radius: 17px;
+    border: 1px solid gray;
+    padding: 0 0 0 2%;
+    background: transparent;
+    line-height: 30px;
+    font-size: 13px;
+    width: 90%;
+    opacity: 0.85;
+    box-shadow: #484848 2px 2px 2px;
+    text-shadow: #484848 2px 1px 2px;
+}
+button.pdf:focus, button.pdf:active {
+  outline: none;
+}
+button.pdf:hover {
+	color: white;
+	opacity: 1;
+	cursor: pointer;
+	text-shadow: #484848 2px 2px 2px
 }
 
 .text {
@@ -117,10 +142,11 @@ opacity: 0.65;
 	text-decoration: none;
 	color: white;
 	text-shadow: #5e8e5e 2px 2px 2px;
+	opacity: 0.85;
 }
 
 .about a:hover {
-	opacity: 0.65;
+	opacity: 1;
 }
 .textUnder {
 	text-align: left;
@@ -134,6 +160,7 @@ opacity: 0.65;
     background-size: 100% 100%;
     height: 70px;
     width: 100%;
+    opacity: 1;
 }
 .navigate1 {
 	float: left;
@@ -142,10 +169,43 @@ opacity: 0.65;
     background-size: 100% 100%;
     height: 70px;
     width: 100%;
+    line-height: 30px;
     position: relative;
     padding: 1% 0;
 }
-#menu h2 {
+.navigate1.active {
+	width: 50px;
+    height: 50px;
+    padding: 0;
+    background: black;
+    border-radius: 11px;
+    border: 5px dashed #ffa300;
+}
+.navigate1.active div {
+    border-bottom: 4px solid white;
+    position: inherit;
+    top: 15%;
+    margin: 11% 24%;
+}
+.navigate1.active h2 {
+	display: none;
+}
+.navigate1.active:hover h2 {
+	display: inline-block;
+}
+.navigate1.active:hover div {
+	display: none;
+}
+.navigate1.active:hover {
+	float: left;
+    height: 70px;
+    width: 99%;
+    line-height: 70px;
+    position: relative;
+    /*padding: 1% 0;*/
+    opacity: 1;
+}
+.navigate1 h2 {
 	font-size: 21px;
 }
 .title {
@@ -163,10 +223,9 @@ opacity: 0.65;
 }
 #menu1 {
 /* display: block; - ниже*/
-    line-height: 70px;
     text-align: center;
+    line-height: 70px;
 }
-
 #menu1 > li:hover > ul {
 	display: block;
 	color: white;
@@ -343,6 +402,10 @@ table {
 .img_col {
 	width: 30%;
 }
+/*.img_col:hover {
+width: 32%;
+overflow: hidden;
+}*/
 
 .nomenclature {
 	width: 30%;
@@ -505,6 +568,15 @@ input[type="submit"]:active {
 .rightcon {
 	text-align: left;
 }
+.footer {
+    padding: 1%;
+    text-align: center;
+    color: #fffafa;
+    background: lightslategray;
+    margin: 15px 0 0 0;
+}
+
+
 /* отзывчивость сайта */
  
 @media (max-width:1170px){
