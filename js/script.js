@@ -90,7 +90,7 @@ $(window).scroll(function(e) {
 });
 // fancybox - всплывающие окна
 $(document).ready(function() {
-			$("a[rel ^= ex]").fancybox({
+			$("a[rel ^= index]").fancybox({
 				'transitionIn'		: 'none',
 				'transitionOut'		: 'none',
 				'titlePosition' 	: 'over',
@@ -98,7 +98,7 @@ $(document).ready(function() {
 					return '<span id="fancybox-title-over">Image ' + (currentIndex + 1) + ' / ' + currentArray.length + (title.length ? ' &nbsp; ' + title : '') + '</span>';
 				}
 			});
-			$("a[rel ^= var]").fancybox({
+			$("a[rel ^= widget]").fancybox({
 				'titlePosition'		: 'outside',
 				'transitionIn'		: 'none',
 				'transitionOut'		: 'none'
