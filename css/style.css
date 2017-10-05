@@ -220,6 +220,9 @@ opacity: 1;
 .about-img {
 	width: 980px;
 }
+.about-img img {
+	width: 100%;
+}
 #menu1 {
 /* display: block; - ниже*/
     text-align: center;
