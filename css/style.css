@@ -399,6 +399,9 @@ table {
     border-bottom: 3px solid gray;
     opacity: 0.6;
 }
+.bottom td {
+	padding: 0;
+}
 .img_col {
 	width: 30%;
 }
