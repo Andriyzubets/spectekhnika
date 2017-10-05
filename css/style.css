@@ -107,28 +107,32 @@ opacity: 1;
 	max-width: 30px;
 	float: right;
 }
-button.pdf {
+.langPanel div {
     border-radius: 17px;
     border: 1px solid gray;
     padding: 0 0 0 2%;
     background: transparent;
     line-height: 30px;
-    font-size: 13px;
+    font-size: 15px;
+    text-align: -webkit-center;
     width: 90%;
     opacity: 0.85;
     box-shadow: #484848 2px 2px 2px;
     text-shadow: #484848 2px 1px 2px;
 }
-button.pdf:focus, button.pdf:active {
+.langPanel div:focus, .langPanel div:active {
   outline: none;
 }
-button.pdf:hover {
+.langPanel div:hover {
 	color: white;
 	opacity: 1;
 	cursor: pointer;
 	text-shadow: #484848 2px 2px 2px
 }
-
+.langPanel a {
+	text-decoration: none;
+	color: black;
+}
 .text {
 	color: #ffffff;
 	font-size: 70px;
