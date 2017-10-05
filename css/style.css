@@ -255,16 +255,17 @@ opacity: 1;
 	/*color: black;*/
 	width: 230px;
 }
-.subpanel button {
+.subpanel div {
 	width: 230px;
 	height: 35px;
 	font-size: 16px;
+	text-transform: none;
 	background: #ffc010;
 	color: #fff;
 	cursor: auto;
 	border: aqua;
 }
-.subpanel button:hover {
+.subpanel div:hover {
 	color: black;
 	text-shadow: gray 1px 1px 2px;
 	box-shadow: gray 1px 1px 2px;
@@ -287,7 +288,7 @@ opacity: 1;
 	text-shadow: white 1px 1px 2px;
 	color: #fff;
 }
-#menu a:active, .subpanel button:active {
+#menu a:active, .subpanel div:active {
 	color: green;
 	text-shadow: green 1px 1px 2px;
 }
