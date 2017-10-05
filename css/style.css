@@ -185,7 +185,7 @@ opacity: 1;
     border-radius: 11px;
     border: 5px dashed #ffa300;
 }
-.navigate1.active div {
+.navigate1.active ul.but {
     border-bottom: 4px solid white;
     position: inherit;
     top: 15%;
@@ -197,7 +197,7 @@ opacity: 1;
 .navigate1.active:hover h2 {
 	display: inline-block;
 }
-.navigate1.active:hover div {
+.navigate1.active:hover ul.but {
 	display: none;
 }
 .navigate1.active:hover {
